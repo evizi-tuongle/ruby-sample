@@ -42,7 +42,7 @@ test:
 # On Heroku and other platform providers, you may have a full connection URL
 # available as an environment variable. For example:
 #
-#   DATABASE_URL="mysql2://myuser:mypass@localhost/somedatabase"
+#DATABASE_URL="mysql2://evizi-admin:Evizi@12345@117.3.39.254:13306/sample_app_development"
 #
 # You can use this database configuration with:
 #
@@ -51,3 +51,6 @@ test:
 #
 production:
   <<: *default
+  database: sample_app_development
+  #url: <%= ENV['DATABASE_URL'] %>
+  #url: "mysql2://evizi-admin:Evizi@12345@117.3.39.254:13306/sample_app_development
